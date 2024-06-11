@@ -48,7 +48,13 @@ jobs:
     - name: Ingest Data  
       run: |  
         python src/data_ingestion.py
-
+    - name: List changes  
+      run: |  
+        echo "Changes:"  
+        git status  
+        echo "Diff:"  
+        git diff  
+  
     - name: push data to repo
       run: |
         git config --global user.name 'amolsuradkar'
