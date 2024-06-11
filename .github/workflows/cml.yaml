@@ -50,6 +50,8 @@ jobs:
         python src/data_ingestion.py
     - name: List changes  
       run: |  
+        git config --global user.name 'Amol suradkar'
+        git config --global user.email '36931368+amolsuradkar@users.noreply.github.com'
         echo "Changes:"  
         git status  
         echo "Diff:"  
