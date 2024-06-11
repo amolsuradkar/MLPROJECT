@@ -23,14 +23,14 @@
 #           # cat metrics.txt >> report.md
           
 name: Python application  
-  
+permissions:
+  contents: write 
 on:  
   push:  
     branches: [ dev ]  
   
 jobs: 
-  permissions:
-    contents: write 
+
   build:  
     runs-on: ubuntu-latest  
     steps:  
