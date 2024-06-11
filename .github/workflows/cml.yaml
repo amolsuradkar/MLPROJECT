@@ -28,11 +28,11 @@ on:
   push:  
     branches: [ dev ]  
   
-jobs:  
+jobs: 
+  permissions:
+    contents: write 
   build:  
-  
     runs-on: ubuntu-latest  
-  
     steps:  
     - uses: actions/checkout@v2  
     - name: Set up Python 3.9  
