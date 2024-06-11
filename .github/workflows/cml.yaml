@@ -46,6 +46,8 @@ jobs:
     - name: Ingest Data  
       run: |  
         python src/data_ingestion.py
+        git config --global user.name 'Amol suradkar'
+        git config --global user.email 'amol2808suradkar@gmail.com'
         git add .
         git commit -m "data ingestion completed" 
         git push
